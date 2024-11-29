@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width:100vw;
+            height:100vh;
+        }
+        .container{
+            /* width: 100vw;
+            height: 100vh; */
+            display:flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .box1{
+            width:300px;
+            height:120px;
+            background-color: aqua;
+            position: relative;
+            animation: box1 3s infinite  alternate ease-in-out ;
+        }
+        .ball{
+            width:120px;
+            height:120px;
+            background-color:black;
+            position: relative;
+            border-radius: 50%;
+            animation: ball 3s infinite  alternate ease-in-out ;
+        }
+        @keyframes ball{
+            from{
+                top:0px;
+                left:0px;
+            }
+            to{
+                top:365px;
+                left:1200px;
+            }
+        }
+        @keyframes box1{
+            from{
+                left:0px;
+                /* rotate:360deg; */
+            }
+            to{
+                left:1230px;
+            }
+        }
+       
+        
+        .box2{
+            width:300px;
+            height:120px;
+            background-color: aqua;
+            position: relative;
+            top: 366px;
+            left: 1230px;
+            
+            animation: box2 3s infinite 3s alternate ease-in-out ;
+        }
+        @keyframes box2{
+            from{
+                top: 366px;
+                left: 1230px;
+                right:0px;
+                /* rotate:360deg; */
+            }
+            to{
+                left:0px;
+              right:1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="box1">
+
+            </div>
+            <div class="ball">
+                
+            </div>
+            <div class="box2">
+    
+            </div>
+        </div>
+    </div>
+</body>
+</html>

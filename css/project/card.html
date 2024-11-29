@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width:100vw;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        .container{
+            width:330px;
+            height:300px;
+            background-color:rgb(2, 26, 26)  ;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px; 
+            color:white;
+        }
+        .image{
+            height:58%;
+            width:100%;
+            border-radius: 20px ;
+            margin-bottom: 10px;
+        }
+        .description{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .prices{
+            display:flex;
+            font-size: 17px;
+            gap:10px;
+        }
+        .color{
+            color:blueviolet
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+             <img class="image" src="image1.jpg">
+             <div class="description">
+                <p>Web Development Master Courses @dot 1.0 Batch</p>
+             </div>
+             <div class="prices">
+                <span class="color"><b>Rs.3499</b></span><b><del>Rs.6999</del></b><b>50% off</b>
+             </div>
+        </div>
+    </div>
+</body>
+</html>

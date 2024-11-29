@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/927b1d22c0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width:100vw;
+            height:100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar{
+            background-color: rgb(15, 23, 42);
+            width:100%;
+            height:13%;
+            display:flex;
+            
+        }
+        .box1{
+            width:50%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            width:50%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+        }
+        .photo{
+            width:220px;
+            height:70px;
+        }
+        .home{
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+        }
+        .cart{
+            color:white;
+            
+            display: flex;
+        }
+        .number{
+            color:white;
+            height: 15px;
+            width:15px;
+            background-color: orangered;
+            border-radius: 50%;
+            /* padding-left: 4px;
+            padding-bottom: 4px; */
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             right:8px;
+            bottom:10px;
+                        
+            position: relative;
+        }
+        .main{
+            width:100%;
+            height:87%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height:100%;
+            width:70%;
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            gap:30px;
+            color:black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .left{
+            height:100%;
+            width:50%;
+            /* border: 1px solid black; */
+            /* background-color: aqua; */
+            overflow: scroll;
+        }
+        .right{
+            height:100%;
+            width:50%;
+            /* border: 1px solid red; */
+        }
+        .upper{
+            width:100%;
+            height:20%;
+            /* background-color: blue; */
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+        }
+        .firstline{
+            font-size: 15px;
+        }
+        .middle{
+            width:100%;
+            height:65%;
+        }
+        .lower{
+            width:100%;
+            height:15%;
+            /* background-color:coral; */
+            gap:10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .btn{
+            background-color: green; 
+            border: none;
+            width:80%;
+            height:30px;
+            border-radius: 4px;
+            color: white;
+        }
+        .row1{
+            /* background-color: blue; */
+            width:100%;
+            height:40%;
+            border-bottom: 2px solid black;
+            display: flex;
+            gap:5px;
+        }
+        .BOX1{
+            padding-bottom: 10px;
+            height:100%;
+            width:40%;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .img1{
+            width:90%;
+            height:95%;
+        }
+        .BOX2{
+            height:100%;
+            width:60%;
+            /* background-color: cornflowerblue; */
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 10px;
+            padding-right: 10px;
+        }
+        .line1{
+            /* border:1px solid black;  */
+            width:100%;
+            height:20%;
+            display: flex;
+            font-size: 14px;
+            align-items: center;
+        }
+        .line2{
+            /* border:1px solid black;  */
+            width:100%;
+            height:50%;
+            display: flex;
+            align-items: center;
+        }
+        .line3{
+            /* border:1px solid black;  */
+            width:100%;
+            height:30%;
+            display: flex;
+        }
+        .price{
+            display:flex;
+            color:green;
+            padding-top: 15px;
+            width:50%;
+            height:100%;
+        }
+        .remove{
+            width:50%;
+            height:100%;
+            padding-top: 15px;
+            display: flex;
+            justify-content: center;
+            padding-left: 20px;
+        }
+        .btn7{
+            background-color: red;
+            height:30px;
+            width: 100px;
+            color:white;
+            border-radius:5px;
+            border:none;
+            font-size: 16px;
+        }
+        .btn7:hover{
+            transform: scale(1.0);
+          border: 2px solid rgb(244, 7, 7);
+            box-shadow: 0px 0px 10px rgb(214, 24, 24);
+            cursor: pointer;
+            transition: transform 1s ease;
+        }
+        .btn:hover{
+            transform: scale(1.0);
+          border: 2px solid rgb(12, 211, 52);
+            box-shadow: 0px 0px 10px rgb(8, 237, 20);
+            cursor: pointer;
+            transition: transform 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+             <div class="box1"><img class="photo" src="navbar.png"></div>
+             <div class="box2">
+                <a href="navbar.html"><div class="home">Home</div></a>
+             <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="number">
+                    5
+                </div>
+            </div>
+             </div>
+             
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="left">
+                    <div class="row1">
+                         <div class="BOX1">
+                            <img class="img1" src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg" >
+                         </div>
+                         <div class="BOX2">
+                            <div class="line1"><h2>Men Slim Fit T-Shirt</h2></div>
+                            <div class="line2"><h6>Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.</h6></div>
+                            <div class="line3">
+                                <div class="price"><h2>$22.30</h2></div>
+                                <div class="remove"><button class="btn7">Discart</button></div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="row1">
+                        <div class="BOX1">
+                            <img class="img1" src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg" >
+                         </div>
+                         <div class="BOX2">
+                            <div class="line1"><h2>Mens Cotton Jacket</h2></div>
+                            <div class="line2"><h6>great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.</h6></div>
+                            <div class="line3">
+                                <div class="price"><h2>$66.99</h2></div>
+                                <div class="remove"><button class="btn7">Discart</button></div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="row1">
+                        <div class="BOX1">
+                            <img class="img1" src="https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg" >
+                         </div>
+                         <div class="BOX2">
+                            <div class="line1"><h2>Mens Casual Slim Fit</h2></div>
+                            <div class="line2"><h6>The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.</h6></div>
+                            <div class="line3">
+                                <div class="price"><h2>$15.99</h2></div>
+                                <div class="remove"><button class="btn7">Discart</button></div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="row1">
+                        <div class="BOX1">
+                            <img class="img1" src="https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg" >
+                         </div>
+                         <div class="BOX2">
+                            <div class="line1"><h2>Rose Gold Plated Ring</h2></div>
+                            <div class="line2"><h6>Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball.</h6></div>
+                            <div class="line3">
+                                <div class="price"><h2>$10.99</h2></div>
+                                <div class="remove"><button class="btn7">Discart</button></div>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="row1">
+                        <div class="BOX1">
+                            <img class="img1" src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" >
+                         </div>
+                         <div class="BOX2">
+                            <div class="line1"><h2>White Gold Plated Princess</h2></div>
+                            <div class="line2"><h6>Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day. placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great</h6></div>
+                            <div class="line3">
+                                <div class="price"><h2>$9.99</h2></div>
+                                <div class="remove"><button class="btn7">Discart</button></div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="upper">
+                        <div class="firstline"><h5>YOUR CART</h5></div>
+                        <div class="secondline"><h2>SUMMARY</h2></div>
+                        <div class="thirdline"><h6>Total Items:5</h6></div>
+                    </div>
+                    <div class="middle"></div>
+                    <div class="lower">
+                        <div class="amount"><h6>Total Amount : $116.26999</h6></div>
+                        <button class="btn">CheckOut Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
